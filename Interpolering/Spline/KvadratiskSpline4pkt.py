@@ -10,14 +10,21 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Vektorar med punkta som skal inperpolerast
-x = [1, 2, 3, 5]
-y = [-4, -3, 0, -2]
+x = [0, 1, 2]
+y = [1, -1, 2]
 
 ###### Slutt på inputs #############
 
 #
 # Set opp Koeffisient-matrisa
 #
+#       //b1 c1 a2 b2 c3   
+# Mat = [[0, 1, 0, 0, 0]
+#        [1, 1, 0, 0, 0]
+#        [0, 0, x[1]**2, x[1], 1]
+#        [0, 0, x[4]**2, x[2], 1]
+#        [1, 0, x[-2]**2, x[-1], 0]
+       
 Mat = [[x[0]**2, x[0], 1, 0, 0, 0, 0, 0, 0],    # Første seks: Interpolere punkta
        [x[1]**2, x[1], 1, 0, 0, 0, 0, 0, 0],
        [0, 0, 0, x[1]**2, x[1], 1, 0, 0, 0],
