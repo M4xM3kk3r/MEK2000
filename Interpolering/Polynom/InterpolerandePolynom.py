@@ -11,8 +11,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Vektorar med punkta som skal interpolerast
-x = np.array([0, 1, 3])
-y = np.array([1, 3, 4])
+x = np.array([12, 13, 14])
+y = np.array([10, 11.7, ])
 
 ###### Slutt på inputs #############
 
